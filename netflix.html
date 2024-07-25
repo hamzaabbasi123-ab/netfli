@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            position: relative;
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+        .header .content {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        .header .content h1 {
+           
+            font-size: 3.5em;
+            font-weight: bold;
+        }
+        .header .content p {
+            font-size: 1.2em;
+        }
+        .header .content input-row {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .header .content input[type="email"] {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            flex: 1;
+            min-width: 600px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: black;
+            opacity: 0.6;
+            color: #ffffff;
+            
+        }
+        
+        .header .content button {
+            padding: 20px 30px;
+            font-size: 1.4em;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .section {
+            padding: 100px;
+            font-size: larger;
+            margin-top: 120px;
+            margin-right: 600px;
+        }
+        .sectionb {
+            padding: 50px;
+            text-align: left;
+            font-size: larger;
+            margin-top: 120px;
+            margin-left: 600px;
+        }
+        
+        .faq {
+            background-color: #141414;
+            padding: 50px;
+        }
+        .faq h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            background-color: #333;
+            margin: 10px 0;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #757575;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .bg{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(2);
+    filter: contrast(0.75);
+    filter: saturate(1.3);
+    opacity: 0.5;
+        }
+        .tv{
+    
+            width: 450px;
+            height: 250px;
+          
+   
+    filter: brightness(2);
+    filter: contrast(0.75);
+    filter: saturate(1.3);
+    
+        }
+    </style>
+</head>
+<body>
+    <img class= "bg" src="https://www.flickonclick.com/wp-content/uploads/2023/07/netflix-on-chromebook-1024x576.jpg" alt="">
+    <div class="header">
+        <div class="content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" placeholder="Email address"><br>
+            <button>Get Started >> </button>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Enjoy on your TV</h2>
+        <img class="tv" src="https://th.bing.com/th/id/OIP.3dPGR1BvPmCHgP67_ZDzAgHaE8?w=265&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="TV Image">
+        <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <div class="sectionb">
+        <h2>Download your shows to watch offline</h2>
+        <img  class="tv" src="https://th.bing.com/th/id/OIP.SjGiWv9ZRKNSnnSlecmAUwAAAA?w=318&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Mobile Image">
+        <p>Save your favorites easily and always have something to watch.</p>
+    </div>
+    <div class="section">
+        <h2>Watch everywhere</h2>
+        <img class ="tv" src ="https://th.bing.com/th?id=OIF.EB9WOov%2b6NlkBCv9lAfR3Q&rs=1&pid=ImgDetMain" alt="Watch Everywhere Image">
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="sectionb">
+        <h2>Create profiles for kids</h2>
+        <img src="https://th.bing.com/th/id/OIP.nYl4dxqjRwZVVLd4J2MsggHaD4?w=275&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Kids Image">
+        <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">What is Netflix?</div>
+        <div class="faq-item">How much does Netflix cost?</div>
+        <div class="faq-item">Where can I watch?</div>
+        <div class="faq-item">How do I cancel?</div>
+        <div class="faq-item">What can I watch on Netflix?</div>
+        <div class="faq-item">Is Netflix good for kids?</div>
+    </div>
+    <div class="footer">
+        <p>Questions? <a href="#">Contact us</a></p>
+       
